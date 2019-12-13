@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BaselineBudgetController">
+   <children>
+      <Button layoutX="560.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="31.0" prefWidth="26.0" text="x" />
+      <Button layoutX="498.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleSave" text="save" />
+      <TextField fx:id="incomeLabel" layoutX="154.0" layoutY="103.0" />
+      <Label layoutX="27.0" layoutY="108.0" text="Monthly Income" />
+      <Label layoutX="145.0" layoutY="108.0" text="\$" />
+      <Label fx:id="errorLabel" layoutX="240.0" layoutY="185.0" />
+   </children>
+</AnchorPane>

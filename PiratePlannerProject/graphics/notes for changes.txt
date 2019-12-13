@@ -1,0 +1,12 @@
++ button:
+adds new row, and they can freely edit the fields
+
+- button:
+allows user to delete row
+
+budget tab (piggy bank icon):
+click it to input things like
+- monthly starting budget/income
+- see recurring bills
+- add recurring bills
+- add 

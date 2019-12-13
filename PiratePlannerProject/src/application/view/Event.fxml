@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EventController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="36.0" layoutY="54.0" prefHeight="27.0" prefWidth="273.0">
+         <font>
+            <Font name="Castellar" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hourTextField" alignment="CENTER" layoutX="29.0" layoutY="129.0" prefHeight="44.0" prefWidth="60.0" text="12">
+         <font>
+            <Font name="Castellar" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="minTextField" alignment="CENTER" layoutX="107.0" layoutY="130.0" prefHeight="43.0" prefWidth="60.0" text="00">
+         <font>
+            <Font name="Castellar" size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="descriptionText" layoutX="28.0" layoutY="282.0" prefHeight="92.0" prefWidth="273.0">
+         <font>
+            <Font name="Castellar" size="15.0" />
+         </font>
+      </TextArea>
+      <ToggleButton fx:id="amButton" layoutX="176.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleAM" prefHeight="43.0" prefWidth="60.0" selected="true" text="AM">
+         <font>
+            <Font name="Castellar" size="15.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="pmButton" layoutX="236.0" layoutY="130.0" mnemonicParsing="false" onAction="#handlePM" prefHeight="43.0" prefWidth="60.0" text="PM">
+         <font>
+            <Font name="Castellar" size="15.0" />
+         </font>
+      </ToggleButton>
+      <Label layoutX="95.0" layoutY="133.0" text=":">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="19.0" fitWidth="47.0" layoutX="40.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../graphics/up%20arrow%20time.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="51.0" layoutX="40.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../graphics/down%20arrow%20time.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="48.0" layoutX="117.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../graphics/up%20arrow%20time.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="timeLabel" layoutX="25.0" layoutY="24.0" prefHeight="26.0" prefWidth="109.0" text="12:00 AM">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="254.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../graphics/save%20brown.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="292.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../graphics/X.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="51.0" layoutX="117.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../graphics/down%20arrow%20time.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="titleText" layoutX="29.0" layoutY="228.0" prefHeight="44.0" prefWidth="273.0">
+         <font>
+            <Font name="Castellar" size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="286.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleExit" opacity="0.0" prefHeight="35.0" prefWidth="39.0" />
+      <Button layoutX="29.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleHourUp" opacity="0.0" prefHeight="31.0" prefWidth="60.0" />
+      <Button layoutX="106.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleMinUp" opacity="0.0" prefHeight="31.0" prefWidth="60.0" />
+      <Button layoutX="248.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleSave" opacity="0.0" prefHeight="35.0" prefWidth="39.0" />
+      <Button layoutX="29.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleHourDown" opacity="0.0" prefHeight="31.0" prefWidth="60.0" textAlignment="CENTER" />
+      <Button layoutX="107.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleMinDown" opacity="0.0" prefHeight="31.0" prefWidth="60.0" textAlignment="CENTER" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="59.0" layoutY="200.0" prefHeight="26.0" prefWidth="217.0" />
+   </children>
+</AnchorPane>

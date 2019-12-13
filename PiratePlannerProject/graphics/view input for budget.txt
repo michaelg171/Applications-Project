@@ -1,0 +1,13 @@
+loan
+-name
+-amount borrowed
+-term
+-apr (applied percentage rate / interest rate)
+
+recurrent expense
+-expense
+-time period in months
+
+onetime expense
+-name
+-cost

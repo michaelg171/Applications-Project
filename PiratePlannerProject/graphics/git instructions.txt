@@ -1,0 +1,6 @@
+git checkout roni
+git status
+git pull
+git add
+git commit
+git push origin roni

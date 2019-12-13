@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.OneTimeExpenseController">
+   <children>
+      <ImageView fitHeight="114.0" fitWidth="358.0" layoutX="134.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../PiratePlanner/graphics/banner.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameText" layoutX="215.0" layoutY="169.0" />
+      <TextField fx:id="amountText" layoutX="215.0" layoutY="206.0" />
+      <Label layoutX="252.0" layoutY="21.0" text="Expenses" textFill="#613d3d">
+         <font>
+            <Font name="Castellar" size="24.0" />
+         </font></Label>
+      <Label layoutX="94.0" layoutY="174.0" text="Expense Name:" />
+      <Label layoutX="141.0" layoutY="211.0" text="Amount:" />
+      <Button alignment="CENTER" layoutX="386.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleLoan" prefHeight="38.0" prefWidth="146.0" text="Loan Expense" />
+      <Button disable="true" layoutX="94.0" layoutY="104.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" text="One Time Expense" />
+      <Button layoutX="240.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleRecur" prefHeight="38.0" prefWidth="146.0" text="Recurring Expense" />
+	  <Button layoutX="492.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleSave" text="Save" />
+      <Button layoutX="560.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleExit" text="x" />
+      <Label layoutX="207.0" layoutY="204.0" prefHeight="25.0" prefWidth="14.0" text="\$">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="282.0" layoutY="341.0" />
+   </children>
+</AnchorPane>
